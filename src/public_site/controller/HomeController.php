@@ -7,7 +7,20 @@ class HomeController
   public function showHomePage(): void
   {
     echo "
-      <p>Hello World!</p>
+        <link href='/src/public_site/styles/home.css' rel='stylesheet' type='text/css'>
+      </head>
     ";
+
+    $this->showHeader();
+
+    echo "
+
+    ";
+  }
+
+  private function showHeader(): void
+  {
+    $headerController = new HeaderController();
+    $headerController->showHeader();
   }
 }

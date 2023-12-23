@@ -1,0 +1,24 @@
+nav p {
+  font-family: barlowCondensed;
+  display: inline-block;
+}
+header {
+  display: flex;
+  padding: 50px;
+}
+nav {
+  display: flex;
+  background-color: black;
+}
+.logo {
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+}
+.header-line {
+  background-color: var(--secondary);
+  top: 50%;
+  height: 2px;
+  width: 30%;
+}
