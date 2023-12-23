@@ -17,7 +17,8 @@ if ($uri[2] != "ajax") {
       <head>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='icon' type='image/x-icon' href='/src/public_site/media/icons/favicon.svg'>
-        <link href='/src/public_site/styles/css/main.css' rel='stylesheet' type='text/css'>
+        <link href='/src/public_site/styles/main.css' rel='stylesheet' type='text/css'>
+        <link href='/src/public_site/styles/root-variables.css' rel='stylesheet' type='text/css'>
   ";
 }
 
