@@ -34,6 +34,9 @@ nav a:hover::after, nav a.active::after {
   width: 100%;
   background-color: white;
 }
+nav a.active:hover::after {
+  opacity: 1;
+}
 nav a:hover::after {
   opacity: 0.5021;
 }
