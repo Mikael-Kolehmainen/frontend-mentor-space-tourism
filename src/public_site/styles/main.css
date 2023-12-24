@@ -46,9 +46,11 @@ html, body {
 }
 h1, h2, h3, h4 {
   font-family: bellefair;
+  font-weight: normal;
 }
 h1 {
   font-size: 150px;
+  font-weight: normal;
 }
 h2 {
   font-size: 100px;
@@ -62,9 +64,11 @@ h4 {
 h5 {
   font-size: 28px;
   font-family: barlowCondensed;
+  letter-spacing: 4.75px;
+  color: var(--secondary)
 }
 p {
-  font-size: 16px;
+  font-size: 18px;
   font-family: barlow;
 }
 a {
