@@ -1,6 +1,7 @@
 <?php
 
 namespace public_site\controller;
+use api\manager\ServerRequestManager;
 
 class HeaderController
 {
@@ -16,28 +17,61 @@ class HeaderController
           <div class='line'></div>
         </div>
         <nav>
-          <a href='#' class='active'>
-            <div class='nav-title'>
-              00 <p>HOME</p>
-            </div>
-          </a>
-          <a href='#'>
-            <div class='nav-title'>
-              01 <p>DESTINATION</p>
-            </div>
-          </a>
-          <a href='#'>
-            <div class='nav-title'>
-              02 <p>CREW</p>
-            </div>
-          </a>
-          <a href='#'>
-            <div class='nav-title'>
-              03 <p>TECHNOLOGOY</p>
-            </div>
-          </a>
-        </nav>
+    ";
+
+    $this->showNavbar();
+
+    echo "    </nav>
       </header>
     ";
+  }
+
+  private function showNavbar(): void
+  {
+    $navItems = [
+      [
+        "link" => "/index.php",
+        "index" => "00",
+        "title" => "HOME",
+        "path" => ""
+      ],
+      [
+        "link" => "/index.php/destination",
+        "index" => "01",
+        "title" => "DESTINATION",
+        "path" => "destination"
+      ],
+      [
+        "link" => "/index.php/crew",
+        "index" => "02",
+        "title" => "CREW",
+        "path" => "crew"
+      ],
+      [
+        "link" => "/index.php/technology",
+        "index" => "03",
+        "title" => "TECHNOLOGY",
+        "path" => "technology"
+      ]
+    ];
+
+    foreach ($navItems as $navItem) {
+      echo "
+        <a href='$navItem[link]' {$this->isActiveNavItem($navItem['path'])}>
+          <div class='nav-title'>
+            $navItem[index] <p>$navItem[title]</p>
+          </div>
+        </a>
+      ";
+    }
+  }
+
+  private function isActiveNavItem($path): string
+  {
+    $uri = ServerRequestManager::getUriParts();
+    if ($uri[2] == $path) {
+      return "class='active'";
+    }
+    return "";
   }
 }

@@ -2,6 +2,7 @@
 
 use public_site\controller\ErrorController;
 use public_site\controller\HomeController;
+use public_site\controller\DestinationController;
 use api\manager\ServerRequestManager;
 
 require __DIR__ . "/src/inc/bootstrap.php";
@@ -27,6 +28,9 @@ switch ($uri[2]) {
   case "":
     showHome();
     break;
+  case "destination":
+    showDestination();
+    break;
   case "error":
     showError("Error title", "This is the error page.", "/index.php");
     break;
@@ -50,6 +54,12 @@ function showHome(): void
 {
   $homeController = new HomeController();
   $homeController->showHomePage();
+}
+
+function showDestination(): void
+{
+  $destinationController = new DestinationController();
+  $destinationController->showDestinationPage();
 }
 
 /**
