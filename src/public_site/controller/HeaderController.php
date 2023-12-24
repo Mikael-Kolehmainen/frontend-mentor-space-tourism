@@ -12,19 +12,29 @@ class HeaderController
         <div class='logo'>
           <img src='/src/public_site/media/icons/logo.svg' alt='Space tourism logo'>
         </div>
-        <div class='header-line'></div>
+        <div class='header-line'>
+          <div class='line'></div>
+        </div>
         <nav>
-          <a href='#'>
-            <b>00</b> <p>HOME</p>
+          <a href='#' class='active'>
+            <div class='nav-title'>
+              00 <p>HOME</p>
+            </div>
           </a>
           <a href='#'>
-            <b>01</b> <p>DESTINATION</p>
+            <div class='nav-title'>
+              01 <p>DESTINATION</p>
+            </div>
           </a>
           <a href='#'>
-            <b>02</b> <p>CREW</p>
+            <div class='nav-title'>
+              02 <p>CREW</p>
+            </div>
           </a>
           <a href='#'>
-            <b>03</b> <p>TECHNOLOGOY</p>
+            <div class='nav-title'>
+              03 <p>TECHNOLOGOY</p>
+            </div>
           </a>
         </nav>
       </header>
