@@ -61,8 +61,11 @@ class DestinationController
           <div class='title'>
             01 <h5>PICK YOUR DESTINATION</h5>
           </div>
-          <div class='planet'>
-            <img src='/src/public_site/media/image-moon.webp' alt='Moon'>
+          <div class='planet'>";
+
+    $this->showPlanetImage();
+
+    echo "
           </div>
         </article>
         <article>
@@ -85,6 +88,18 @@ class DestinationController
   {
     $headerController = new HeaderController();
     $headerController->showHeader();
+  }
+
+  private function showPlanetImage(): void
+  {
+    $uri = ServerRequestManager::getUriParts();
+    foreach ($this->planets as $planet) {
+      if ($uri[3] == $planet["path"]) {
+        $lowerCasePlanetName = strtolower($planet['title']);
+        echo "<img src='/src/public_site/media/image-$lowerCasePlanetName.webp' alt='$lowerCasePlanetName'>";
+        break;
+      }
+    }
   }
 
   private function showSubPageNavBar(): void
