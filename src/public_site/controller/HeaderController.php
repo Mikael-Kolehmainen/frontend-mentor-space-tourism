@@ -21,7 +21,8 @@ class HeaderController
 
     $this->showNavbar();
 
-    echo "    </nav>
+    echo "
+        </nav>
       </header>
     ";
   }
