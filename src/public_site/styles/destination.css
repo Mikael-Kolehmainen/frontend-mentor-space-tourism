@@ -2,3 +2,74 @@ body {
   background: url("/src/public_site/media/background/background-destination-desktop.jpg") no-repeat;
   background-size: cover;
 }
+section {
+  margin-top: 50px;
+}
+section article {
+  width: 40%;
+  margin-top: 40px;
+}
+section article:first-child {
+  width: 60%;
+  margin: 0;
+}
+section article nav {
+  background: none;
+  backdrop-filter: none;
+  width: 60%;
+  padding: 0;
+}
+section article nav a {
+  color: var(--secondary);
+  font-weight: normal;
+  margin: auto 6%;
+}
+section article nav a:first-child {
+  margin-left: 0;
+}
+section article nav a:hover::after,
+section article nav a.active::after {
+  bottom: 20px;
+}
+section article nav a.active {
+  color: white;
+}
+section article .title {
+  font-size: 28px;
+  font-family: barlowCondensed;
+  font-weight: bold;
+  letter-spacing: 4.75px;
+  color: rgba(255, 255, 255, 0.25)
+}
+section article .title h5 {
+  display: inline-block;
+  color: white;
+  font-weight: normal;
+  margin-left: 10px;
+}
+section article .planet {
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+}
+section article .planet img {
+  display: block;
+  margin: auto;
+  width: 445px;
+  height: 445px;
+}
+section article h2 {
+  margin: 20px 0;
+}
+section article p {
+  color: var(--secondary);
+  width: 90%;
+  line-height: 32px;
+}
+section article .line {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+section article .facts-box .fact .subheading1 {
+  color: white;
+}

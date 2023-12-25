@@ -44,6 +44,13 @@ html, body {
   color: var(--font-color);
   overflow: auto;
 }
+section {
+  display: flex;
+  margin: 0 12.5%;
+}
+section article {
+  width: 50%;
+}
 h1, h2, h3, h4 {
   font-family: bellefair;
   font-weight: normal;
@@ -82,4 +89,16 @@ a {
 .subheading2 {
   font-size: 14px;
   font-family: barlowCondensed;
+  letter-spacing: 2.35px;
+}
+.line {
+  background-color: #383B4B;
+  height: 1px;
+  width: 95%;
+}
+.facts-box {
+  display: flex;
+}
+.facts-box .fact {
+  width: 50%;
 }

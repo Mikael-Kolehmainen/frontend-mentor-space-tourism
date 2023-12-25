@@ -1,7 +1,6 @@
 .hero {
-  display: flex;
-  margin: 0 10% 0 10%;
   padding-top: 200px;
+  margin: 0 10%;
 }
 .hero .left {
   width: 50%;
