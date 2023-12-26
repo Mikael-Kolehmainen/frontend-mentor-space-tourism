@@ -50,6 +50,20 @@ section {
 }
 section article {
   width: 50%;
+  position: relative;
+}
+section article .title {
+  font-size: 28px;
+  font-family: barlowCondensed;
+  font-weight: bold;
+  letter-spacing: 4.75px;
+  color: rgba(255, 255, 255, 0.25)
+}
+section article .title h5 {
+  display: inline-block;
+  color: white;
+  font-weight: normal;
+  margin-left: 10px;
 }
 h1, h2, h3, h4 {
   font-family: bellefair;
@@ -101,4 +115,23 @@ a {
 }
 .facts-box .fact {
   width: 50%;
+}
+.switch {
+  display: flex;
+  justify-content: space-between;
+  width: 132px;
+}
+.switch .option {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.1744;
+}
+.switch .option:hover {
+  cursor: pointer;
+  opacity: 0.501;
+}
+.switch .option.active {
+  opacity: 1;
 }

@@ -1,0 +1,37 @@
+body {
+  background: url("/src/public_site/media/background/background-crew-desktop.jpg") no-repeat;
+  background-size: cover;
+}
+section {
+  margin-top: 50px;
+}
+section article {
+  position: relative;
+  width: 40%;
+  margin: 0;
+}
+section article:first-child {
+  width: 60%;
+}
+section article .title {
+  margin-bottom: 150px;
+}
+section article p {
+  color: var(--secondary);
+  width: 60%;
+  line-height: 32px;
+}
+section article h4 {
+  opacity: 0.5042;
+}
+section article h3 {
+  margin: 20px 0;
+}
+section article img {
+  position: absolute;
+  bottom: 0;
+}
+section article .switch {
+  position: absolute;
+  bottom: 100px;
+}

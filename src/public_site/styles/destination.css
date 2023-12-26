@@ -34,19 +34,6 @@ section article nav a.active::after {
 section article nav a.active {
   color: white;
 }
-section article .title {
-  font-size: 28px;
-  font-family: barlowCondensed;
-  font-weight: bold;
-  letter-spacing: 4.75px;
-  color: rgba(255, 255, 255, 0.25)
-}
-section article .title h5 {
-  display: inline-block;
-  color: white;
-  font-weight: normal;
-  margin-left: 10px;
-}
 section article .planet {
   width: 100%;
   height: 100%;
