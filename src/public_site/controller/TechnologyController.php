@@ -8,6 +8,7 @@ class TechnologyController
   {
     echo "
         <link href='/src/public_site/styles/technology.css' rel='stylesheet' type='text/css'>
+        <script src='/src/public_site/js/Menu.js' defer></script>
         <script src='/src/public_site/js/event-listeners/technologyMenu.js' defer></script>
       </head>
     ";
