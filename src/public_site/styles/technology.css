@@ -1,0 +1,23 @@
+body {
+  background: url("/src/public_site/media/background/background-technology-desktop.jpg") no-repeat;
+  background-size: cover;
+}
+section {
+  margin: 50px 0 0 12.5%;
+}
+section .aside {
+  margin-top: 75px;
+}
+.subheading2 {
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  color: var(--secondary);
+}
+section article p {
+  color: var(--secondary);
+  width: 80%;
+  line-height: 32px;
+}
+section article h3 {
+  margin: 20px 0;
+}

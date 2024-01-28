@@ -4,6 +4,7 @@ use public_site\controller\CrewController;
 use public_site\controller\ErrorController;
 use public_site\controller\HomeController;
 use public_site\controller\DestinationController;
+use public_site\controller\TechnologyController;
 use api\manager\ServerRequestManager;
 
 require __DIR__ . "/src/inc/bootstrap.php";
@@ -34,6 +35,9 @@ switch ($uri[2]) {
     break;
   case "crew":
     showCrew();
+    break;
+  case "technology":
+    showTechnology();
     break;
   case "error":
     showError("Error title", "This is the error page.", "/index.php");
@@ -70,6 +74,12 @@ function showCrew(): void
 {
   $crewController = new CrewController();
   $crewController->showCrewPage();
+}
+
+function showTechnology(): void
+{
+  $technologyController = new TechnologyController();
+  $technologyController->showTechnologyPage();
 }
 
 /**

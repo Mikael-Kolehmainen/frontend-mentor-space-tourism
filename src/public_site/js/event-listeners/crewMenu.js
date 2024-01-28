@@ -9,7 +9,9 @@ const handleCrewMemberSwitch = async (e) => {
   document.getElementById("crew-member-title").innerText = crewMember.title;
   document.getElementById("crew-member-name").innerText = crewMember.name;
   document.getElementById("crew-member-description").innerText = crewMember.description;
-  document.getElementById("crew-member-image").src = crewMember.image;
+  const crewMemberImage = document.getElementById("crew-member-image");
+  crewMemberImage.src = crewMember.image;
+  crewMemberImage.alt = crewMember.name;
 
   for (const crewOption of crewOptions) {
     crewOption.classList.remove("active");

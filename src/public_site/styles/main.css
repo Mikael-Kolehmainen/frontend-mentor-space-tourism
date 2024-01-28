@@ -52,6 +52,17 @@ section article {
   width: 50%;
   position: relative;
 }
+section .aside {
+  width: fit-content;
+  margin-left: auto;
+}
+section article .content {
+  display: flex;
+  margin-top: 150px;
+}
+section article .item {
+  margin-left: 100px;
+}
 section article .title {
   font-size: 28px;
   font-family: barlowCondensed;
@@ -134,4 +145,42 @@ a {
 }
 .switch .option.active {
   opacity: 1;
+}
+nav.circles {
+  background: none;
+  backdrop-filter: none;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  gap: 35px;
+}
+nav.circles .option {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  position: relative;
+}
+nav.circles .option:hover {
+  border: 1px solid rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+nav.circles .option p {
+  font-size: 32px;
+  font-family: bellefair;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: fit-content;
+  text-align: center;
+  letter-spacing: 0;
+}
+nav.circles .option.active {
+  background-color: white;
+}
+nav.circles .option.active p {
+  color: var(--background);
 }
