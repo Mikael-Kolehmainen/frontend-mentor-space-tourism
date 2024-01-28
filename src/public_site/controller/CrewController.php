@@ -9,6 +9,7 @@ class CrewController
     echo "
         <link href='/src/public_site/styles/crew.css' rel='stylesheet' type='text/css'>
         <script src='/src/public_site/js/event-listeners/fullHeight.js' defer></script>
+        <script src='/src/public_site/js/event-listeners/crewMenu.js' defer></script>
       </head>
     ";
 
@@ -32,11 +33,11 @@ class CrewController
             pilot and former NASA astronaut. He launched into space for the
             third time as commander of Crew Dragon Demo-2.
           </p>
-          <div class='switch'>
-            <div class='option active'></div>
-            <div class='option'></div>
-            <div class='option'></div>
-            <div class='option'></div>
+          <div class='switch' id='crew-switch'>
+            <div class='option active' id='1'></div>
+            <div class='option' id='2'></div>
+            <div class='option' id='3'></div>
+            <div class='option' id='4'></div>
           </div>
         </article>
         <article>
