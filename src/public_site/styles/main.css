@@ -177,6 +177,7 @@ nav.circles .option p {
   width: fit-content;
   text-align: center;
   letter-spacing: 0;
+  color: var(--font-color);
 }
 nav.circles .option.active {
   background-color: white;
